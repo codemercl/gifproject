@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
+  publicPath: '/gifproject/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
