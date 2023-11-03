@@ -7,7 +7,14 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  publicPath: '/gifproject/',
+  build: {
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/logo',
+      },
+    },
+  },
+  publicPath: '/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
