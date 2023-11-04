@@ -5,12 +5,12 @@ import { searchGifData } from './search.service'
 interface State extends IState {}
 
 const state: State = {
-  getById: [],
+  getById: null,
   paramId: ""
 }
 
 const mutations = {
-  setDataCart(state: State, data: CartData[]) {
+  setDataCart(state: State, data: CartData) {
     state.getById = data
   },
   setParamId(state: State, text: string) {
@@ -27,7 +27,7 @@ const actions = {
       const data = await searchGifData( apiKey, rating, state.paramId)
       commit('setDataCart', data)
     } catch (error) {
-      console.error('An error occurred while executing the request:', error)
+      // ('An error occurred while executing the request:', error)
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <nav class="wrapper">
-    <input v-model="searchText" type="text" />
+    <input v-model="searchText" type="text" id="search" name="search" />
   </nav>
 </template>
 

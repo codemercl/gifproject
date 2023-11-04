@@ -5,19 +5,19 @@ import UserPage from '../views/UserPage/UserPage.vue';
 
 const routes = [
   {
-    path: '/',
+    path: '/giffy',
     name: 'Home',
-    component: () => HomeView
+    component: HomeView
   },
   {
     path: '/gif/:id',
     name: 'GifDetail',
-    component: () => GifDetail
+    component: GifDetail
   },
   {
     path: '/user/:username/:id/',
     name: 'UserPage',
-    component: () => UserPage
+    component: UserPage
   },
 ];
 
